@@ -1,0 +1,209 @@
+body {
+    padding: 0;
+    z-index: -1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: fixed;
+  }
+  .main {
+    height: 100%;
+    width: 100%;
+    
+  }
+
+  .about {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  
+  /* animation Css */
+  #animationCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .container {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+    z-index: 1;
+  }
+  
+  .buttons {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .content {
+    display: none;
+  }
+  
+  #features {
+    display: block;
+  }
+  
+  .fruit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /* 수정 */
+    pointer-events: auto; /* Allow clicking */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* new */
+  .fruit.explode {
+    transform: scale(2);
+    opacity: 0;
+  }
+  
+  /* Card css */
+  
+  .business-card {
+    position: relative;
+    /* flex-direction: row; */
+    background-color: rgb(208, 208, 208);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 400px;
+    padding: 20px;
+  }
+  
+  .business-card img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+  }
+  
+  /* .fruit-images {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  .fruit-images img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+  } */
+  
+  .fruit-images .top-left {
+    top: 0px;
+    left: 0px;
+  }
+  
+  .fruit-images .bottom-right {
+    bottom: 0px;
+    right: 0px;
+  }
+  
+  .info {
+    /* padding: 20px; */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .info p {
+    margin: 0;
+    color: #555;
+  }
+  
+  /* feature css */
+  
+  .siteFunction {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .title {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+  }
+  
+  .description {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    background-color: #fafafa;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding: 0 10px;
+  }
+  
+  .description.open {
+    padding: 10px;
+    max-height: 500px;
+  }
+  
+  /* button Css */
+  
+  .Mbtn {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+  }
+  
+  .Mbtn:hover {
+    background-position: right center;
+  }
+  
+  .Mbtn:active {
+    box-shadow: 0 0 10px 3px rgba(76, 175, 80, 0.8);
+    transform: scale(1.05);
+  }
+  
+  #featuresButton {
+    background-image: linear-gradient(to right, #c0aadb 0%, #a32fd5 51%, #c520db 100%);
+  }
+  
+  #teamButton {
+    background-image: linear-gradient(to right, #6e81cb 0%, #c2e9fb 51%, #3d75cf 100%);
+  }
+  
+  .Mbtn.active {
+    box-shadow: 0 0 10px 3px rgba(116, 41, 221, 0.8);
+    transform: scale(1.05);
+  }
+  
+  /* team Css */
+  #team {
+    margin: 0 auto;
+    /* 좌우 여백을 자동으로 설정하여 가운데 정렬 */
+    width: 50%;
+    /* 원하는 너비로 조절 */
+  }

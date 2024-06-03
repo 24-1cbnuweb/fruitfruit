@@ -1,0 +1,73 @@
+.img{
+    width: 220px;
+    height: 270px;
+ display: block; /* 이미지 블록 레벨로 변환 */
+    margin-bottom: 10px; /* 이미지와 텍스트 사이 간격 추가 */}
+
+
+
+.item {
+    width: 220px;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    margin-bottom: 100px; /* 항목 사이 간격 추가 */
+    flex: 1 0 21%; /* 각 아이템의 너비를 21%로 설정하여 한 줄에 4개 배치 (여유 공간 포함) */
+  box-sizing: border-box; /* 패딩과 보더를 너비에 포함 */
+}
+  
+.item-content{
+    height: 400px;
+}
+  .item h3 {
+    font-size: 18px;
+    margin: 5px 0; /* 제목 간격 조정 */
+  }
+  
+  .item a {
+    font-size: 18px;
+    display: block; /* 링크 요소 블록 레벨로 변환 */
+    margin: 2px 0; /* 링크 간격 조정 */
+  }
+  
+  .item p {
+    display: inline; /* 할인 텍스트 인라인 유지 */
+    margin-right: 5px; /* 할인 텍스트와 가격 사이 간격 추가 */
+  }
+
+  .price {
+    font-weight: bold;
+  }
+
+  .link-div {
+    text-align: center; /* 링크 버튼을 가운데 정렬 */
+    margin-top: 10px; /* 링크 버튼 상단 간격 추가 */
+    border: 1px black solid ;
+    height: 30px;
+    align-content: center;
+  }
+
+  
+  .link-button {
+    background: none; /* 버튼 배경 제거 */
+    border: none; /* 버튼 테두리 제거 */
+    padding: 0; /* 버튼 패딩 제거 */
+    width: 220px;
+    height: 20px;
+  }
+  .link-button:hover{
+    cursor: pointer;
+  }
+  
+  .link-img {
+    width: 20px; /* 이미지 너비 설정 */
+    height: 20px; /* 이미지 높이 설정 */
+  }
+
+  .link-img:hover {
+    cursor: pointer; 
+  }
+
+  .link-button:hover{
+    transform: scale(1.2);
+    z-index: 1;
+    transition: all 0.5;
+  }

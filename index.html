@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css"/>
+    <link rel="stylesheet" href="css/product.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>FruitFruit</title>
+  </head>
+  <body>
+    <div class="nav">
+      <button onclick="toggle()"><img src="./css/icon.png" width="50px"></button>
+      <div class="nav_menu">
+      <a href="index.html">HOME</a>
+      <div class="nav_fruit">
+        <a>SHOP</a>
+        <div class="nav_fruitmenu">
+          <a href="domestic.html">국내과일</a>
+          <a href="imported.html">수입과일</a>
+          <a href="frozen.html">냉동/건조과일</a>
+        </div>
+      </div>
+        <a href="about.html">ABOUT</a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="maintitle">
+        <h1>For Your Best Choice!</h1>
+        <div class="main_search"></div>
+        <input class="searchbar" placeholder="search" />
+      </div>
+      <div class="maintext">
+        <a class="comment" style="color: #00160a">Marketkurly? Coupang?</a>
+        <a 
+          ><br />Now compare at a glance!<br />
+          This is a fruit price comparison site!</a>
+      </div>
+    </div>
+
+    <div class="bestSell">
+      <h3>Best Sell Here !</h3>
+      <br>
+      <div class="domestic">
+        <h2>국내 과일</h2>
+        <div class="container" id="domesticContainer"></div>
+      </div>
+      <div class="imported">
+        <h2>수입 과일</h2>
+        <div class="container" id="importedContainer"></div>
+      </div>
+      <div class="frozen">
+        <h2>냉동/건조 과일</h2>
+        <div class="container" id="frozenContainer"></div>
+      </div>
+    </div>
+
+    <div class="bottom"></div>
+
+    <script src="component/maind.js"></script>
+    <script src="component/mainf.js"></script>
+    <script src="component/maini.js"></script>
+    <script src="component/main.js"></script>
+  </body>
+</html>

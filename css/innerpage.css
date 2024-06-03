@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(white, #5b886f);
+  z-index: -1;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: fixed;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+
+}
+.maintitle {
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+.main hr {
+  width: 70%;
+  border: 1px solid black;
+}
+
+#nav {
+  text-align: center;
+  transition: top 0.3s;
+  background-color: white;  
+}
+.main_search { 
+  background: transparent;
+  transition: position 0.3s, top 0.3s, left 0.3s;
+}
+.fixed {
+  position: fixed;
+  top: 0; /* fixed to the top of the page */
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  z-index: 3; /* ensure it appears above other content */
+  width: 100%;
+  max-width: 600px; /* adjust as needed */
+  text-align: center;
+}
+.searchbar {
+  width: 550px;
+  height: 40px;
+  font-size: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.content {
+  height: 2000px; /* just to create a scrollable area */
+}
+.main {
+  padding-top: 60px; /* ensure content doesn't hide behind fixed search bar */
+}
+

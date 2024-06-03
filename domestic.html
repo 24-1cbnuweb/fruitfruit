@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/domestic.css" />
+    <link rel="stylesheet" href="css/innerpage.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Domestic</title>
+  </head>
+  <body>
+    <div class="nav">
+      <button onclick="toggle()"><img src="./css/icon.png" width="50px" ></button>
+      <div class="nav_menu">
+      <a href="index.html">HOME</a>
+      <div class="nav_fruit">
+        <a>SHOP</a>
+        <div class="nav_fruitmenu">
+          <a href="domestic.html">국내과일</a>
+          <a href="imported.html">수입과일</a>
+          <a href="frozen.html">냉동/건조과일</a>
+        </div>
+      </div>
+        <a href="about.html">ABOUT</a>
+      </div>
+    </div>
+    
+      <div class="main">
+        <div class="maintitle">
+          <h1>국내 과일</h1>
+          <div class="main_search"><br>
+          <input id="nav" class="searchbar" placeholder="search" /><br /><br><hr /></div>
+        </div>
+      </div>
+
+    <div class="itemsDomestic">
+      <br><br>
+      <div class="container" id="DpageContainer">
+      </div>
+    </div>
+
+    <script src="component/paged.js"></script>
+    <script src="component/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.itemsDomestic .itemsImport .itemsFrozen {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+.row {
+  gap: 40px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+
+
+
+.bottom {
+  height: 200px;
+}
+
+.linkbtn {
+  width: 10px;
+}
